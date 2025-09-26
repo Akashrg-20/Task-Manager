@@ -43,7 +43,7 @@
 
         <form th:action="@{/save-task}" method="POST" th:object="${todo}" >
         <div class="d-flex mb-4">
-            <input type="text" id="taskInput" class="form-control me-2" placeholder="Enter a task here" th:field="*{task}" style="width:700px; height=200px;" required >
+            <input type="text" id="taskInput" class="form-control me-2" placeholder="Enter a task here" th:field="*{task}" style="width:700px; height=200px;" required>
             <span th:errors="*{task}"></span>
             <button class="btn btn-save me-2" >Add Task</button>
 

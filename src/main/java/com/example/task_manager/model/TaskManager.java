@@ -11,6 +11,7 @@ public class TaskManager {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String task;
     private String status="In progress";
 }
